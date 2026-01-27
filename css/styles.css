@@ -586,35 +586,53 @@ button {
 
 @media screen and (min-width: 768px) {
     footer .container {
-        padding-left: 108px;
-        padding-right: 164px;
+        padding: 0 108px;
     }
 
     .footer-container {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
         align-items: baseline;
+        justify-content: start;
+        gap: 72px 24px;
     }
 
     .footer-left-position {
         max-width: 264px;
     }
 
-    .footer-subscribe-container {
-        margin-right: auto;
-    }
-
     .footer-subscribe {
-        display: flex;
         flex-direction: row;
-        align-items: center;
         gap: 24px;
         margin-top: 16px;
     }
 
     .footer-input {
         width: 264px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+
+    footer .container {
+        padding: 0 15px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+        justify-content: unset;
+        gap: 0;
+    }
+
+    .footer-left-position {
+        margin-right: 120px;
+    }
+
+    .footer-subscribe-container {
+        margin-left: auto;
     }
 }
